@@ -1,0 +1,227 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 840155
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 18 sequences with 35887 nucleotide sites
+Number of constant sites: 35007 (= 97.5479% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 35007 (= 97.5479% of all sites)
+Number of parsimony informative sites: 478
+Number of distinct site patterns: 274
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -57620.778  115309.555 -  0.00193  115309.621 -  0.00194  115598.151 +    0.611
+K3Pu+F+I         -57616.582  115303.165 -    0.047  115303.235 -   0.0472  115600.250 +    0.214
+TN+F+I           -57617.578  115305.157 -   0.0174  115305.227 -   0.0174  115602.241 +   0.0791
+TIM+F+I          -57613.379  115298.757 +    0.426  115298.832 +    0.427  115604.330 -   0.0278
+TPM2+F+I         -57618.824  115307.647 -    0.005  115307.718 -  0.00502  115604.732 -   0.0228
+TPM2u+F+I        -57618.824  115307.647 -    0.005  115307.718 -  0.00502  115604.732 -   0.0228
+TPM3u+F+I        -57619.768  115309.535 -  0.00195  115309.606 -  0.00195  115606.620 -  0.00886
+TPM3+F+I         -57619.768  115309.535 -  0.00195  115309.606 -  0.00195  115606.620 -  0.00886
+TIM2+F+I         -57615.667  115303.334 -   0.0432  115303.408 -   0.0433  115608.907 -  0.00282
+TIM3+F+I         -57616.479  115304.958 -   0.0192  115305.033 -   0.0192  115610.531 -  0.00125
+TVM+F+I          -57614.635  115303.270 -   0.0446  115303.348 -   0.0446  115617.331 - 4.18e-05
+GTR+F+I          -57611.476  115298.951 +    0.387  115299.034 +    0.386  115621.500 -  5.2e-06
+GTR+F+I+G4       -57628.555  115335.110 - 5.44e-09  115335.197 - 5.41e-09  115666.147 - 1.05e-15
+GTR+F+G4         -57770.034  115616.068 - 5.32e-70  115616.151 - 5.31e-70  115938.617 - 7.16e-75
+K2P+I            -57817.479  115696.959 - 1.45e-87  115697.014 - 1.47e-87  115960.091 - 1.56e-79
+K3P+I            -57814.324  115692.648 - 1.25e-86  115692.706 - 1.26e-86  115964.268 - 1.93e-80
+TNe+I            -57815.593  115695.186 - 3.52e-87  115695.245 - 3.55e-87  115966.806 - 5.42e-81
+TIMe+I           -57812.410  115690.819 - 3.12e-86  115690.882 - 3.14e-86  115970.928 -  6.9e-82
+TIM2e+I          -57814.982  115695.965 - 2.38e-87  115696.027 -  2.4e-87  115976.073 - 5.27e-83
+TIM3e+I          -57815.563  115697.127 - 1.33e-87  115697.189 - 1.34e-87  115977.235 - 2.95e-83
+TVMe+I           -57813.926  115695.851 - 2.52e-87  115695.918 - 2.54e-87  115984.448 -    8e-85
+SYM+I            -57812.037  115694.075 - 6.13e-87  115694.145 - 6.15e-87  115991.159 - 2.79e-86
+GTR+F            -58016.318  116106.635 - 1.59e-176  116106.714 - 1.59e-176  116420.696 - 1.49e-179
+F81+F+I          -58109.094  116284.188 - 4.42e-215  116284.251 - 4.46e-215  116564.297 - 9.79e-211
+JC+I             -58291.927  116643.854 - 3.51e-293  116643.905 - 3.56e-293  116898.497 - 2.63e-283
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 8.0533
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 8.0533
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2326
+  pi(C) = 0.2802
+  pi(G) = 0.2719
+  pi(T) = 0.2154
+
+Rate matrix Q:
+
+  A    -1.078    0.1125    0.8793   0.08648
+  C   0.09339    -0.899    0.1092    0.6965
+  G    0.7521    0.1125   -0.9511   0.08648
+  T   0.09339    0.9061    0.1092    -1.109
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9417
+
+ Category  Relative_rate  Proportion
+  0         0              0.9417
+  1         17.16          0.05829
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -57620.7762 (s.e. 248.0542)
+Unconstrained log-likelihood (without tree): -57112.3331
+Number of free parameters (#branches + #model parameters): 34
+Akaike information criterion (AIC) score: 115309.5525
+Corrected Akaike information criterion (AICc) score: 115309.6188
+Bayesian information criterion (BIC) score: 115598.1489
+
+Total tree length (sum of branch lengths): 0.0324
+Sum of internal branch lengths: 0.0122 (37.7726% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'M73260.1' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**AC_000008.1
+|
++--M73260.1
+|
+|  +**AY601635.1
++--| (100/100)
+   |             +---------------OQ518274.1
+   |         +---| (99.3/56)
+   |         |   |                                  +**OQ518263.1
+   |         |   |                              +---| (100/100)
+   |         |   |                              |   +**OQ518296.1
+   |         |   |                           +--| (100/100)
+   |         |   |                           |  |  +--OQ518268.1
+   |         |   |                           |  +--| (95.4/98)
+   |         |   |                           |     +----------OQ518275.1
+   |         |   |                        +--| (99.7/100)
+   |         |   |                        |  +--KX868466.2
+   |         |   |                     +--| (27.3/67)
+   |         |   |                     |  |     +--OQ518289.1
+   |         |   |                     |  |  +--| (95.4/99)
+   |         |   |                     |  |  |  +--OQ518319.1
+   |         |   |                     |  +--| (98.7/99)
+   |         |   |                     |     +--OQ518303.1
+   |         |   |       +-------------| (100/100)
+   |         |   |       |             |     +**OQ518305.1
+   |         |   |       |             +-----| (100/100)
+   |         |   |       |                   +**OQ518340.1
+   |         |   +-------| (100/56)
+   |         |           +-------------OQ518283.1
+   +---------| (100/100)
+             +-----------------OQ518277.1
+
+Tree in newick format:
+
+(AC_000008.1:0.0000010000,M73260.1:0.0000291008,(AY601635.1:0.0000020722,((OQ518274.1:0.0040302127,((((((OQ518263.1:0.0000010000,OQ518296.1:0.0000010000)100/100:0.0010580858,(OQ518268.1:0.0004282254,OQ518275.1:0.0026595545)95.4/98:0.0002283782)100/100:0.0007294626,KX868466.2:0.0007856091)99.7/100:0.0006378398,((OQ518289.1:0.0008289197,OQ518319.1:0.0002566243)95.4/99:0.0001688997,OQ518303.1:0.0005416789)98.7/99:0.0003014474)27.3/67:0.0002402629,(OQ518305.1:0.0000010000,OQ518340.1:0.0000010000)100/100:0.0015294496)100/100:0.0035333065,OQ518283.1:0.0035522701)100/56:0.0019964426)99.3/56:0.0010464552,OQ518277.1:0.0044467366)100/100:0.0026396608)100/100:0.0007112034);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -57621.076134
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AC_000008.1
+|
++--M73260.1
+|
+|  +--AY601635.1
++--| (100)
+   |             +---------------OQ518274.1
+   |         +---| (56)
+   |         |   |                                        +**OQ518263.1
+   |         |   |                                     +**|
+   |         |   |                                     |  +**OQ518353.1
+   |         |   |                                  +--|
+   |         |   |                                  |  +**OQ518307.1
+   |         |   |                              +---| (100)
+   |         |   |                              |   +--OQ518296.1
+   |         |   |                           +--| (100)
+   |         |   |                           |  |  +--OQ518268.1
+   |         |   |                           |  +--| (98)
+   |         |   |                           |     +----------OQ518275.1
+   |         |   |                        +--| (100)
+   |         |   |                        |  +--KX868466.2
+   |         |   |                     +--| (67)
+   |         |   |                     |  |     +--OQ518289.1
+   |         |   |                     |  |  +--| (99)
+   |         |   |                     |  |  |  +--OQ518319.1
+   |         |   |                     |  +--| (99)
+   |         |   |                     |     +--OQ518303.1
+   |         |   |       +-------------| (100)
+   |         |   |       |             |     +--OQ518305.1
+   |         |   |       |             +-----| (100)
+   |         |   |       |                   +--OQ518340.1
+   |         |   +-------| (56)
+   |         |           +-------------OQ518283.1
+   +---------| (100)
+             +-----------------OQ518277.1
+
+
+Consensus tree in newick format: 
+
+(AC_000008.1:0.0000026791,M73260.1:0.0000278658,(AY601635.1:0.0000026791,((OQ518274.1:0.0040300905,((((((((OQ518263.1:0.0000000000,OQ518353.1:0.0000000000):0.0000000000,OQ518307.1:0.0000000000):0.0000026791,OQ518296.1:0.0000026791)100:0.0010574315,(OQ518268.1:0.0004283198,OQ518275.1:0.0026599880)98:0.0002285471)100:0.0007293867,KX868466.2:0.0007860245)100:0.0006376355,((OQ518289.1:0.0008285951,OQ518319.1:0.0002558157)99:0.0001687644,OQ518303.1:0.0005415183)99:0.0003009289)67:0.0002412763,(OQ518305.1:0.0000026791,OQ518340.1:0.0000026791)100:0.0015282707)100:0.0035333731,OQ518283.1:0.0035525095)56:0.0019968777)56:0.0010469889,OQ518277.1:0.0044472572)100:0.0026388876)100:0.0007115406);
+
+TIME STAMP
+----------
+
+Date and time: Thu Oct  5 19:19:22 2023
+Total CPU time used: 33.647367 seconds (0h:0m:33s)
+Total wall-clock time used: 3.54199411 seconds (0h:0m:3s)
+

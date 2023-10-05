@@ -1,0 +1,212 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    rager-ga (AVX2, FMA3, 14 GB RAM)
+Command: iqtree2 -s References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim --prefix References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree -m TEST --alrt 1000 -B 1000 -T 12 -o M73260.1
+Seed:    840155 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Oct  5 19:19:18 2023
+Kernel:  AVX+FMA - 12 threads (12 CPU cores detected)
+
+Reading alignment file References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 18 sequences with 35887 columns, 274 distinct patterns
+478 parsimony-informative, 402 singleton sites, 35007 constant sites
+             Gap/Ambiguity  Composition  p-value
+   1  AC_000008.1    0.01%    passed     99.82%
+   2  M73260.1       0.02%    passed     99.89%
+   3  AY601635.1     0.01%    passed     99.59%
+   4  OQ518274.1     0.01%    passed     99.65%
+   5  OQ518277.1     0.03%    passed     99.69%
+   6  OQ518263.1     0.00%    passed     99.96%
+   7  OQ518296.1     0.00%    passed     99.96%
+   8  OQ518307.1     0.00%    passed     99.96%
+   9  OQ518353.1     0.00%    passed     99.96%
+  10  OQ518268.1     0.01%    passed     99.95%
+  11  KX868466.2     0.00%    passed    100.00%
+  12  OQ518289.1     0.01%    passed     99.96%
+  13  OQ518319.1     0.01%    passed     99.97%
+  14  OQ518303.1     0.01%    passed     99.99%
+  15  OQ518305.1     0.00%    passed    100.00%
+  16  OQ518340.1     0.00%    passed    100.00%
+  17  OQ518275.1     0.02%    passed     99.97%
+  18  OQ518283.1     0.01%    passed     99.92%
+****  TOTAL          0.01%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: OQ518296.1 is identical to OQ518263.1 but kept for subsequent analysis
+NOTE: OQ518340.1 is identical to OQ518305.1 but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OQ518307.1 (identical to OQ518263.1) is ignored but added at the end
+NOTE: OQ518353.1 (identical to OQ518263.1) is ignored but added at the end
+Alignment was printed to References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -57670.618
+Optimal log-likelihood: -57670.184
+Rate parameters:  A-C: 1.07488  A-G: 6.17599  A-T: 0.84663  C-G: 0.64556  C-T: 7.47019  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.492
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.004 sec)
+Time for fast ML tree search: 0.074 seconds
+
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 88 DNA models (sample size: 35887) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         58016.318    37  116106.635   116106.714   116420.696
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       57611.476    38  115298.951   115299.034   115621.500
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      57770.034    38  115616.068   115616.151   115938.617
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    57628.555    39  115335.110   115335.197   115666.147
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  SYM+I         57812.037    35  115694.074   115694.145   115991.159
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 10  TVM+F+I       57614.635    37  115303.270   115303.348   115617.331
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  TVMe+I        57813.926    34  115695.851   115695.918   115984.448
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 18  TIM3+F+I      57616.479    36  115304.958   115305.033   115610.531
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 22  TIM3e+I       57815.563    33  115697.127   115697.189   115977.235
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 26  TIM2+F+I      57615.667    36  115303.334   115303.408   115608.907
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 30  TIM2e+I       57814.982    33  115695.965   115696.027   115976.073
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 34  TIM+F+I       57613.379    36  115298.757   115298.832   115604.330
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 38  TIMe+I        57812.410    33  115690.819   115690.882   115970.928
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 42  TPM3u+F+I     57619.768    35  115309.535   115309.606   115606.620
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  TPM3+F+I      57619.768    35  115309.535   115309.606   115606.620
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 50  TPM2u+F+I     57618.824    35  115307.647   115307.718   115604.732
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 54  TPM2+F+I      57618.824    35  115307.647   115307.718   115604.732
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 58  K3Pu+F+I      57616.582    35  115303.165   115303.235   115600.250
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 62  K3P+I         57814.324    32  115692.648   115692.706   115964.268
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 66  TN+F+I        57617.578    35  115305.157   115305.227   115602.241
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  TNe+I         57815.593    32  115695.186   115695.245   115966.806
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 74  HKY+F+I       57620.778    34  115309.555   115309.621   115598.151
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 78  K2P+I         57817.479    31  115696.959   115697.014   115960.091
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 82  F81+F+I       58109.094    33  116284.188   116284.251   116564.297
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 86  JC+I          58291.927    30  116643.854   116643.905   116898.497
+Akaike Information Criterion:           TIM+F+I
+Corrected Akaike Information Criterion: TIM+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.model.gz
+CPU time for ModelFinder: 5.779 seconds (0h:0m:5s)
+Wall-clock time for ModelFinder: 0.536 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 840155)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -57620.778
+Optimal log-likelihood: -57620.778
+Rate parameters:  A-C: 1.00000  A-G: 8.05330  A-T: 1.00000  C-G: 1.00000  C-T: 8.05330  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.942
+Parameters optimization took 1 rounds (0.015 sec)
+Computing ML distances based on estimated model parameters... 0.028 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -57652.281
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.073 second
+Computing log-likelihood of 98 initial trees ... 0.184 seconds
+Current best score: -57620.778
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -57620.778
+Iteration 10 / LogL: -57620.779 / Time: 0h:0m:0s
+Iteration 20 / LogL: -57620.797 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -57620.778 / CPU time: 0.463
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -57620.803 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -57625.059 / Time: 0h:0m:0s (0h:0m:1s left)
+UPDATE BEST LOG-LIKELIHOOD: -57620.777
+Iteration 50 / LogL: -57625.063 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -57654.115
+Iteration 60 / LogL: -57620.779 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 70 / LogL: -57620.783 / Time: 0h:0m:1s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -57620.777
+Iteration 80 / LogL: -57625.065 / Time: 0h:0m:1s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -57620.776
+Iteration 90 / LogL: -57625.162 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -57620.781 / Time: 0h:0m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -57654.293
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -57620.776
+Optimal log-likelihood: -57620.776
+Rate parameters:  A-C: 1.00000  A-G: 8.05330  A-T: 1.00000  C-G: 1.00000  C-T: 8.05330  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.942
+Parameters optimization took 1 rounds (0.006 sec)
+BEST SCORE FOUND : -57620.776
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.040 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.splits.nex
+Total tree length: 0.032
+
+Total number of iterations: 102
+CPU time used for tree search: 32.530 sec (0h:0m:32s)
+Wall-clock time used for tree search: 3.187 sec (0h:0m:3s)
+Total CPU time used: 33.647 sec (0h:0m:33s)
+Total wall-clock time used: 3.318 sec (0h:0m:3s)
+
+Computing bootstrap consensus tree...
+Reading input file References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.splits.nex...
+16 taxa and 48 splits.
+Consensus tree written to References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.contree
+Reading input trees file References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.contree
+Log-likelihood of consensus tree: -57621.076
+
+Analysis results written to: 
+  IQ-TREE report:                References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.iqtree
+  Maximum-likelihood tree:       References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.treefile
+  Likelihood distances:          References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.splits.nex
+  Consensus tree:                References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.contree
+  Screen log file:               References_mastadenovirusC5_strain5/Human_mastadenovirus_C5_all.fasta.aln.trim.tree.log
+
+Date and Time: Thu Oct  5 19:19:22 2023

@@ -1,0 +1,82 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=17;
+TAXLABELS
+[1] 'AC_000008.1_Human_adenovirus_5'
+[2] 'M73260.1_Mastadenovirus_h5_gene'
+[3] 'AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151'
+[4] 'mystery_virus'
+[5] 'OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012'
+[6] 'OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011'
+[7] 'OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012'
+[8] 'OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012'
+[9] 'OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011'
+[10] 'KX868466.2_Human_adenovirus_5_isolate_GyK193'
+[11] 'OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012'
+[12] 'OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009'
+[13] 'OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011'
+[14] 'OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010'
+[15] 'OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009'
+[16] 'OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010'
+[17] 'OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=17 nsplits=50;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 5,
+	100	 7,
+	100	 8,
+	100	 7 8,
+	100	 9,
+	100	 16,
+	98	 9 16,
+	100	 7 8 9 16,
+	100	 10,
+	100	 7 8 9 10 16,
+	100	 14,
+	100	 15,
+	100	 14 15,
+	25	 7 8 9 10 14 15 16,
+	100	 11,
+	100	 12,
+	99	 11 12,
+	0	 1 2 3 4 5 6 13 17,
+	100	 13,
+	100	 1 2 3 4 5 6 17,
+	100	 17,
+	58	 1 2 3 4 5 6,
+	57	 1 2 3 4 6,
+	100	 6,
+	100	 1 2 3 4,
+	56	 1 2 4,
+	100	 4,
+	100	 1 2,
+	100	 1,
+	99	 11 12 13,
+	68	 7 8 9 10 11 12 13 16,
+	42	 1 2 3 4 5 17,
+	6	 1 2 3 4 5,
+	20	 1 2 3,
+	36	 5 17,
+	24	 3 4,
+	7	 11 12 13 14 15,
+	1	 7 8 16,
+	0	 11 12 14 15,
+	1	 11 13,
+	1	 7 8 9,
+	1	 7 8 9 10 13 14 15 16,
+	0	 1 2 3 4 17,
+	1	 12 13,
+	0	 5 6,
+	0	 7 8 9 10 13 16,
+	0	 10 11 12 13 14 15,
+	0	 7 8 9 10 11 12 16,
+;
+END; [Splits]
+

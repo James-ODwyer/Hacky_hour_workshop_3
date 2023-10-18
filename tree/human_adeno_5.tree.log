@@ -1,0 +1,322 @@
+IQ-TREE multicore version 2.2.0.5 COVID-edition for Linux 64-bit built Sep 26 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    c217 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree2 -s alignment/human_adeno_5.trimaln --prefix tree/human_adeno_5.tree -m TEST --alrt 1000 -B 1000 -T 12 -o M73260.1_Mastadenovirus_h5_gene
+Seed:    312926 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Oct 18 14:44:44 2023
+Kernel:  AVX+FMA - 12 threads (12 CPU cores detected)
+
+Reading alignment file alignment/human_adeno_5.trimaln ... Fasta format detected
+Reading fasta file: done in 0.0106871 secs using 99.97% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0228269 secs using 679.7% CPU
+Alignment has 19 sequences with 35882 columns, 271 distinct patterns
+478 parsimony-informative, 403 singleton sites, 35001 constant sites
+                                                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.60555e-05 secs using 664% CPU
+   1  AC_000008.1_Human_adenovirus_5                                  0.00%    passed     99.85%
+   2  M73260.1_Mastadenovirus_h5_gene                                 0.01%    passed     99.91%
+   3  AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151       0.00%    passed     99.65%
+   4  mystery_virus                                                   0.00%    passed     99.54%
+   5  OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012    0.01%    passed     99.69%
+   6  OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011    0.03%    passed     99.68%
+   7  OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012    0.00%    passed     99.94%
+   8  OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012    0.00%    passed     99.94%
+   9  OQ518307.1_Human_adenovirus_5_isolate_HAdV-C5/USA/57124/2012    0.00%    passed     99.94%
+  10  OQ518353.1_Human_adenovirus_5_isolate_HAdV-C5/USA/98124/2012    0.00%    passed     99.94%
+  11  OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011    0.00%    passed     99.94%
+  12  KX868466.2_Human_adenovirus_5_isolate_GyK193                    0.00%    passed     99.99%
+  13  OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012    0.01%    passed     99.95%
+  14  OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009    0.01%    passed     99.97%
+  15  OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011    0.01%    passed     99.99%
+  16  OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010    0.00%    passed    100.00%
+  17  OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009    0.00%    passed    100.00%
+  18  OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010    0.02%    passed     99.96%
+  19  OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009    0.01%    passed     99.94%
+****  TOTAL                                                           0.01%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012 is identical to OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012 but kept for subsequent analysis
+NOTE: OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009 is identical to OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010 but kept for subsequent analysis
+Checking for duplicate sequences: done in 7.79629e-05 secs using 801.7% CPU
+Identifying sites to remove: done in 0.00568819 secs using 727.2% CPU
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: OQ518307.1_Human_adenovirus_5_isolate_HAdV-C5/USA/57124/2012 (identical to OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012) is ignored but added at the end
+NOTE: OQ518353.1_Human_adenovirus_5_isolate_HAdV-C5/USA/98124/2012 (identical to OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012) is ignored but added at the end
+Alignment was printed to tree/human_adeno_5.tree.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to tree/human_adeno_5.tree.uniqueseq.phy
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.001 seconds, parsimony score: 1090 (based on 881 sites)
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.045464 secs using 881% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -57696.260
+Optimal log-likelihood: -57695.669
+Rate parameters:  A-C: 1.09222  A-G: 6.72117  A-T: 0.71074  C-G: 0.68028  C-T: 7.73096  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.493
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.022 sec)
+Time for fast ML tree search: 0.139 seconds
+
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 88 DNA models (sample size: 35882) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         58074.692    39  116227.384   116227.471   116558.416
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       57625.829    40  115331.658   115331.750   115671.178
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      57806.289    40  115692.577   115692.669   116032.097
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    57642.766    41  115367.533   115367.629   115715.540
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  SYM+I         57826.049    37  115726.099   115726.177   116040.154
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 10  TVM+F+I       57627.382    39  115332.765   115332.852   115663.797
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  TVMe+I        57826.757    36  115725.513   115725.587   116031.081
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 18  TIM3+F+I      57630.864    38  115337.728   115337.811   115660.272
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 22  TIM3e+I       57829.866    35  115729.732   115729.802   116026.812
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 26  TIM2+F+I      57629.947    38  115335.895   115335.977   115658.438
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 30  TIM2e+I       57829.695    35  115729.390   115729.460   116026.470
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 34  TIM+F+I       57626.383    38  115328.767   115328.850   115651.311
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 38  TIMe+I        57826.313    35  115722.626   115722.696   116019.705
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 42  TPM3u+F+I     57632.517    37  115339.034   115339.113   115653.090
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  TPM3+I        57830.556    34  115729.112   115729.178   116017.703
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 50  TPM2u+F+I     57631.531    37  115337.062   115337.141   115651.118
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 54  TPM2+I        57830.382    34  115728.764   115728.831   116017.356
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 58  K3Pu+F+I      57628.022    37  115330.044   115330.123   115644.100
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 62  K3P+I         57827.100    34  115722.200   115722.266   116010.792
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 66  TN+F+I        57631.144    37  115336.288   115336.366   115650.343
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  TNe+I         57829.980    34  115727.961   115728.027   116016.553
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 74  HKY+F+I       57632.699    36  115337.399   115337.473   115642.966
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 78  K2P+I         57830.672    33  115727.343   115727.406   116007.447
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 82  F81+F+I       58158.214    35  116386.427   116386.498   116683.507
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 86  JC+I          58341.050    32  116746.100   116746.159   117017.716
+Akaike Information Criterion:           TIM+F+I
+Corrected Akaike Information Criterion: TIM+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to tree/human_adeno_5.tree.model.gz
+CPU time for ModelFinder: 16.289 seconds (0h:0m:16s)
+Wall-clock time for ModelFinder: 1.554 seconds (0h:0m:1s)
+Generating 1000 samples for ultrafast bootstrap (seed: 312926)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -57632.699
+Optimal log-likelihood: -57632.699
+Rate parameters:  A-C: 1.00000  A-G: 8.75946  A-T: 1.00000  C-G: 1.00000  C-T: 8.75946  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.944
+Parameters optimization took 1 rounds (0.003 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000242949 secs using 1200% CPU
+Computing ML distances took 0.000331 sec (of wall-clock time) 0.003712 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000124931 secs using 1064% CPU
+Constructing RapidNJ tree: done in 0.00606608 secs using 631.4% CPU
+Computing RapidNJ tree took 0.006332 sec (of wall-clock time) 0.041101 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -57668.677
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.033 second
+Computing log-likelihood of 98 initial trees ... 1.015 seconds
+Current best score: -57630.217
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.0469198 secs using 1100% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -57629.080
+Optimizing NNI: done in 0.0652139 secs using 1087% CPU
+Optimizing NNI: done in 0.0650399 secs using 1088% CPU
+Optimizing NNI: done in 0.081856 secs using 1082% CPU
+Optimizing NNI: done in 0.0565989 secs using 992.9% CPU
+Optimizing NNI: done in 0.029134 secs using 973.1% CPU
+Optimizing NNI: done in 0.039484 secs using 1067% CPU
+Optimizing NNI: done in 0.0388529 secs using 1089% CPU
+Optimizing NNI: done in 0.0520589 secs using 1100% CPU
+Optimizing NNI: done in 0.044817 secs using 1100% CPU
+Iteration 10 / LogL: -57629.083 / Time: 0h:0m:1s
+Optimizing NNI: done in 0.052053 secs using 1078% CPU
+Optimizing NNI: done in 0.0447662 secs using 1082% CPU
+Optimizing NNI: done in 0.0517371 secs using 1092% CPU
+Optimizing NNI: done in 0.0520048 secs using 1100% CPU
+Optimizing NNI: done in 0.0355542 secs using 1100% CPU
+Optimizing NNI: done in 0.049418 secs using 1083% CPU
+Optimizing NNI: done in 0.0491741 secs using 1100% CPU
+Optimizing NNI: done in 0.0547581 secs using 1100% CPU
+Optimizing NNI: done in 0.0566039 secs using 1094% CPU
+Optimizing NNI: done in 0.076761 secs using 1089% CPU
+Iteration 20 / LogL: -57629.163 / Time: 0h:0m:2s
+Finish initializing candidate tree set (2)
+Current best tree score: -57629.080 / CPU time: 2.136
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.066889 secs using 1077% CPU
+Optimizing NNI: done in 0.308702 secs using 1092% CPU
+Optimizing NNI: done in 0.112903 secs using 1092% CPU
+Optimizing NNI: done in 0.0780849 secs using 1085% CPU
+Optimizing NNI: done in 0.0468459 secs using 1124% CPU
+Optimizing NNI: done in 0.0272801 secs using 1200% CPU
+Optimizing NNI: done in 0.031004 secs using 1200% CPU
+Optimizing NNI: done in 0.037431 secs using 1200% CPU
+Optimizing NNI: done in 0.040314 secs using 1200% CPU
+Optimizing NNI: done in 0.0325902 secs using 1165% CPU
+Iteration 30 / LogL: -57633.743 / Time: 0h:0m:3s (0h:0m:7s left)
+Optimizing NNI: done in 0.0305171 secs using 1200% CPU
+Optimizing NNI: done in 0.0513909 secs using 1200% CPU
+Optimizing NNI: done in 0.046015 secs using 1199% CPU
+Optimizing NNI: done in 0.0238311 secs using 1200% CPU
+Optimizing NNI: done in 0.0514421 secs using 1187% CPU
+Optimizing NNI: done in 0.03513 secs using 1198% CPU
+Optimizing NNI: done in 0.0203171 secs using 1200% CPU
+Optimizing NNI: done in 0.0296619 secs using 1179% CPU
+Optimizing NNI: done in 0.043829 secs using 1179% CPU
+Optimizing NNI: done in 0.0325301 secs using 1194% CPU
+Iteration 40 / LogL: -57629.241 / Time: 0h:0m:3s (0h:0m:5s left)
+Optimizing NNI: done in 0.0315499 secs using 1200% CPU
+Optimizing NNI: done in 0.0275531 secs using 1171% CPU
+Optimizing NNI: done in 0.0281119 secs using 1153% CPU
+Optimizing NNI: done in 0.0338378 secs using 1200% CPU
+Optimizing NNI: done in 0.0300519 secs using 1188% CPU
+Optimizing NNI: done in 0.052556 secs using 1200% CPU
+Optimizing NNI: done in 0.025213 secs using 1200% CPU
+Optimizing NNI: done in 0.0330031 secs using 1179% CPU
+Optimizing NNI: done in 0.0308449 secs using 1200% CPU
+Optimizing NNI: done in 0.0312159 secs using 1200% CPU
+Iteration 50 / LogL: -57633.784 / Time: 0h:0m:3s (0h:0m:3s left)
+Log-likelihood cutoff on original alignment: -57662.978
+Optimizing NNI: done in 0.0472691 secs using 1166% CPU
+Optimizing NNI: done in 0.0223329 secs using 1200% CPU
+Optimizing NNI: done in 0.0414081 secs using 1199% CPU
+Optimizing NNI: done in 0.0522811 secs using 1199% CPU
+Optimizing NNI: done in 0.0309289 secs using 1200% CPU
+Optimizing NNI: done in 0.033016 secs using 1199% CPU
+Optimizing NNI: done in 0.019803 secs using 1199% CPU
+Optimizing NNI: done in 0.0377352 secs using 1200% CPU
+Optimizing NNI: done in 0.0321121 secs using 1195% CPU
+Optimizing NNI: done in 0.0343361 secs using 1200% CPU
+Iteration 60 / LogL: -57629.175 / Time: 0h:0m:4s (0h:0m:2s left)
+Optimizing NNI: done in 0.041311 secs using 1166% CPU
+Optimizing NNI: done in 0.042392 secs using 1200% CPU
+Optimizing NNI: done in 0.0317469 secs using 1146% CPU
+Optimizing NNI: done in 0.025768 secs using 1139% CPU
+Optimizing NNI: done in 0.0293579 secs using 1199% CPU
+Optimizing NNI: done in 0.0396271 secs using 1180% CPU
+Optimizing NNI: done in 0.042372 secs using 1167% CPU
+Optimizing NNI: done in 0.0342798 secs using 1200% CPU
+Optimizing NNI: done in 0.0265942 secs using 1200% CPU
+Optimizing NNI: done in 0.0425501 secs using 1200% CPU
+Iteration 70 / LogL: -57636.182 / Time: 0h:0m:4s (0h:0m:2s left)
+Optimizing NNI: done in 0.036438 secs using 1136% CPU
+Optimizing NNI: done in 0.20367 secs using 1070% CPU
+Optimizing NNI: done in 0.12059 secs using 1024% CPU
+Optimizing NNI: done in 0.145294 secs using 1092% CPU
+Optimizing NNI: done in 0.106142 secs using 1100% CPU
+Optimizing NNI: done in 0.145574 secs using 1095% CPU
+Optimizing NNI: done in 0.135674 secs using 1070% CPU
+Optimizing NNI: done in 0.097199 secs using 1100% CPU
+Optimizing NNI: done in 0.111296 secs using 1100% CPU
+Optimizing NNI: done in 0.103604 secs using 1096% CPU
+Iteration 80 / LogL: -57633.748 / Time: 0h:0m:5s (0h:0m:1s left)
+Optimizing NNI: done in 0.102176 secs using 1094% CPU
+Optimizing NNI: done in 0.106921 secs using 1089% CPU
+Optimizing NNI: done in 0.118262 secs using 1093% CPU
+Optimizing NNI: done in 0.067795 secs using 1100% CPU
+Optimizing NNI: done in 0.0900888 secs using 1095% CPU
+Optimizing NNI: done in 0.127363 secs using 1094% CPU
+Optimizing NNI: done in 0.115898 secs using 1090% CPU
+Optimizing NNI: done in 0.141204 secs using 1097% CPU
+Optimizing NNI: done in 0.0414131 secs using 1150% CPU
+Optimizing NNI: done in 0.027616 secs using 1194% CPU
+Iteration 90 / LogL: -57636.185 / Time: 0h:0m:6s (0h:0m:0s left)
+Optimizing NNI: done in 0.0385518 secs using 1241% CPU
+Optimizing NNI: done in 0.0520718 secs using 1198% CPU
+Optimizing NNI: done in 0.0357411 secs using 1208% CPU
+Optimizing NNI: done in 0.040668 secs using 1182% CPU
+Optimizing NNI: done in 0.0244088 secs using 1334% CPU
+Optimizing NNI: done in 0.03495 secs using 1200% CPU
+Optimizing NNI: done in 0.0486398 secs using 1187% CPU
+Optimizing NNI: done in 0.0482371 secs using 1200% CPU
+Optimizing NNI: done in 0.0387042 secs using 1190% CPU
+Optimizing NNI: done in 0.0450931 secs using 1200% CPU
+Iteration 100 / LogL: -57629.198 / Time: 0h:0m:7s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -57663.030
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+Optimizing NNI: done in 0.0603619 secs using 1179% CPU
+Optimizing NNI: done in 0.0676739 secs using 1180% CPU
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -57629.080
+Optimal log-likelihood: -57629.080
+Rate parameters:  A-C: 1.00000  A-G: 8.00297  A-T: 1.00000  C-G: 1.00000  C-T: 8.00297  G-T: 1.00000
+Base frequencies:  A: 0.233  C: 0.280  G: 0.272  T: 0.215
+Proportion of invariable sites: 0.941
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -57629.080
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.071 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file tree/human_adeno_5.tree.splits.nex
+Total tree length: 0.032
+
+Total number of iterations: 102
+CPU time used for tree search: 81.898 sec (0h:1m:21s)
+Wall-clock time used for tree search: 7.304 sec (0h:0m:7s)
+Total CPU time used: 83.904 sec (0h:1m:23s)
+Total wall-clock time used: 7.493 sec (0h:0m:7s)
+
+Computing bootstrap consensus tree...
+Reading input file tree/human_adeno_5.tree.splits.nex...
+17 taxa and 50 splits.
+Consensus tree written to tree/human_adeno_5.tree.contree
+Reading input trees file tree/human_adeno_5.tree.contree
+Log-likelihood of consensus tree: -57629.435
+
+Analysis results written to: 
+  IQ-TREE report:                tree/human_adeno_5.tree.iqtree
+  Maximum-likelihood tree:       tree/human_adeno_5.tree.treefile
+  Likelihood distances:          tree/human_adeno_5.tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          tree/human_adeno_5.tree.splits.nex
+  Consensus tree:                tree/human_adeno_5.tree.contree
+  Screen log file:               tree/human_adeno_5.tree.log
+
+Date and Time: Wed Oct 18 14:44:53 2023

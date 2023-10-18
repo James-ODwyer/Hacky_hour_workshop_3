@@ -1,0 +1,234 @@
+IQ-TREE 2.2.0.5 COVID-edition built Sep 26 2022
+
+Input file name: alignment/human_adeno_5.trimaln
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 312926
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 19 sequences with 35882 nucleotide sites
+Number of constant sites: 35001 (= 97.5447% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 35001 (= 97.5447% of all sites)
+Number of parsimony informative sites: 478
+Number of distinct site patterns: 271
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -57632.699  115337.399 -  0.00669  115337.473 -  0.00672  115642.966 +    0.613
+K3Pu+F+I         -57628.022  115330.044 +    0.264  115330.123 +    0.265  115644.100 +    0.348
+TN+F+I           -57631.144  115336.288 -   0.0117  115336.366 -   0.0117  115650.343 -   0.0153
+TPM2u+F+I        -57631.531  115337.062 -  0.00791  115337.141 -  0.00793  115651.118 -   0.0104
+TIM+F+I          -57626.383  115328.767 +    0.501  115328.850 +    0.501  115651.311 -  0.00945
+TPM3u+F+I        -57632.517  115339.034 -  0.00295  115339.113 -  0.00296  115653.090 -  0.00388
+TIM2+F+I         -57629.947  115335.895 -   0.0142  115335.977 -   0.0142  115658.438 - 0.000268
+TIM3+F+I         -57630.864  115337.728 -  0.00567  115337.811 -  0.00567  115660.272 - 0.000107
+TVM+F+I          -57627.382  115332.765 +   0.0678  115332.852 +   0.0677  115663.797 - 1.84e-05
+GTR+F+I          -57625.829  115331.658 +    0.118  115331.750 +    0.117  115671.178 - 4.58e-07
+GTR+F+I+G4       -57642.766  115367.533 - 1.91e-09  115367.629 -  1.9e-09  115715.540 - 1.07e-16
+K2P+I            -57830.672  115727.343 - 1.41e-87  115727.406 - 1.43e-87  116007.447 - 4.38e-80
+K3P+I            -57827.100  115722.200 - 1.85e-86  115722.266 - 1.86e-86  116010.792 - 8.22e-81
+TNe+I            -57829.980  115727.961 - 1.04e-87  115728.027 - 1.05e-87  116016.552 - 4.61e-82
+TPM2+I           -57830.382  115728.764 - 6.94e-88  115728.831 -    7e-88  116017.356 - 3.09e-82
+TPM3+I           -57830.556  115729.112 - 5.83e-88  115729.178 - 5.88e-88  116017.703 -  2.6e-82
+TIMe+I           -57826.313  115722.626 - 1.49e-86  115722.696 -  1.5e-86  116019.705 - 9.54e-83
+TIM2e+I          -57829.695  115729.390 - 5.07e-88  115729.460 - 5.11e-88  116026.470 - 3.24e-84
+TIM3e+I          -57829.866  115729.732 - 4.28e-88  115729.802 -  4.3e-88  116026.812 - 2.73e-84
+TVMe+I           -57826.757  115725.513 - 3.53e-87  115725.587 - 3.54e-87  116031.081 - 3.23e-85
+GTR+F+G4         -57806.289  115692.577 -    5e-80  115692.669 - 4.98e-80  116032.097 - 1.94e-85
+SYM+I            -57826.049  115726.099 - 2.63e-87  115726.177 - 2.64e-87  116040.154 - 3.46e-87
+GTR+F            -58074.692  116227.384 - 3.69e-196  116227.471 - 3.69e-196  116558.416 -   1e-199
+F81+F+I          -58158.214  116386.427 - 1.08e-230  116386.498 - 1.08e-230  116683.507 - 6.87e-227
+JC+I             -58341.050  116746.100 -        0  116746.159 -        0  117017.716 - 1.84e-299
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 8.0030
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 8.0030
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2326
+  pi(C) = 0.2802
+  pi(G) = 0.2719
+  pi(T) = 0.2154
+
+Rate matrix Q:
+
+  A    -1.078    0.1131    0.8781   0.08692
+  C   0.09385   -0.8992    0.1097    0.6956
+  G    0.7511    0.1131   -0.9511   0.08692
+  T   0.09385    0.9051    0.1097    -1.109
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9413
+
+ Category  Relative_rate  Proportion
+  0         0              0.9413
+  1         17.04          0.0587
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -57629.0800 (s.e. 248.4251)
+Unconstrained log-likelihood (without tree): -57066.4361
+Number of free parameters (#branches + #model parameters): 36
+Akaike information criterion (AIC) score: 115330.1600
+Corrected Akaike information criterion (AICc) score: 115330.2343
+Bayesian information criterion (BIC) score: 115635.7277
+
+Total tree length (sum of branch lengths): 0.0324
+Sum of internal branch lengths: 0.0122 (37.6040% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'M73260.1_Mastadenovirus_h5_gene' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**AC_000008.1_Human_adenovirus_5
+|
++--M73260.1_Mastadenovirus_h5_gene
+|
+|     +--AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151
+|  +**| (0/56)
+|  |  |             +---------------OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012
+|  |  |         +---| (99.3/57)
+|  |  |         |   |                                  +**OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012
+|  |  |         |   |                              +---| (100/100)
+|  |  |         |   |                              |   +**OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012
+|  |  |         |   |                           +--| (99.9/100)
+|  |  |         |   |                           |  |  +--OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011
+|  |  |         |   |                           |  +--| (95.4/98)
+|  |  |         |   |                           |     +----------OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010
+|  |  |         |   |                        +--| (99.9/100)
+|  |  |         |   |                        |  +--KX868466.2_Human_adenovirus_5_isolate_GyK193
+|  |  |         |   |                     +--| (24.6/68)
+|  |  |         |   |                     |  |     +--OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012
+|  |  |         |   |                     |  |  +--| (94.2/99)
+|  |  |         |   |                     |  |  |  +--OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009
+|  |  |         |   |                     |  +--| (97.8/99)
+|  |  |         |   |                     |     +--OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011
+|  |  |         |   |       +-------------| (100/100)
+|  |  |         |   |       |             |     +**OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010
+|  |  |         |   |       |             +-----| (100/100)
+|  |  |         |   |       |                   +**OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009
+|  |  |         |   +-------| (100/58)
+|  |  |         |           +-------------OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009
+|  |  +---------| (100/100)
+|  |            +-----------------OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011
++--| (100/100)
+   +--mystery_virus
+
+Tree in newick format:
+
+(AC_000008.1_Human_adenovirus_5:0.0000010000,M73260.1_Mastadenovirus_h5_gene:0.0000278702,((AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151:0.0000278702,((OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012:0.0040276971,((((((OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012:0.0000010000,OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012:0.0000010000)100/100:0.0010573693,(OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011:0.0004280240,OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010:0.0026590052)95.4/98:0.0002285996)99.9/100:0.0007291665,KX868466.2_Human_adenovirus_5_isolate_GyK193:0.0007854968)99.9/100:0.0006377592,((OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012:0.0008287188,OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009:0.0002558565)94.2/99:0.0001688548,OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011:0.0005415237)97.8/99:0.0003009772)24.6/68:0.0002415301,(OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010:0.0000010000,OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009:0.0000010000)100/100:0.0015284191)100/100:0.0035303683,OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009:0.0035492349)100/58:0.0019957359)99.3/57:0.0010473204,OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011:0.0044455979)100/100:0.0026055349)0/56:0.0000010000,mystery_virus:0.0000278702)100/100:0.0006843290);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -57629.435407
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AC_000008.1_Human_adenovirus_5
+|
++--M73260.1_Mastadenovirus_h5_gene
+|
+|     +--AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151
+|  +--| (56)
+|  |  |             +---------------OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012
+|  |  |         +---| (57)
+|  |  |         |   |                                        +**OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012
+|  |  |         |   |                                     +**|
+|  |  |         |   |                                     |  +**OQ518307.1_Human_adenovirus_5_isolate_HAdV-C5/USA/57124/2012
+|  |  |         |   |                                  +--|
+|  |  |         |   |                                  |  +**OQ518353.1_Human_adenovirus_5_isolate_HAdV-C5/USA/98124/2012
+|  |  |         |   |                              +---| (100)
+|  |  |         |   |                              |   +--OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012
+|  |  |         |   |                           +--| (100)
+|  |  |         |   |                           |  |  +--OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011
+|  |  |         |   |                           |  +--| (98)
+|  |  |         |   |                           |     +----------OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010
+|  |  |         |   |                        +--| (100)
+|  |  |         |   |                        |  +--KX868466.2_Human_adenovirus_5_isolate_GyK193
+|  |  |         |   |                     +--| (68)
+|  |  |         |   |                     |  |     +--OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012
+|  |  |         |   |                     |  |  +--| (99)
+|  |  |         |   |                     |  |  |  +--OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009
+|  |  |         |   |                     |  +--| (99)
+|  |  |         |   |                     |     +--OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011
+|  |  |         |   |       +-------------| (100)
+|  |  |         |   |       |             |     +--OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010
+|  |  |         |   |       |             +-----| (100)
+|  |  |         |   |       |                   +--OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009
+|  |  |         |   +-------| (58)
+|  |  |         |           +-------------OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009
+|  |  +---------| (100)
+|  |            +-----------------OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011
++--| (100)
+   +--mystery_virus
+
+
+Consensus tree in newick format: 
+
+(AC_000008.1_Human_adenovirus_5:0.0000026794,M73260.1_Mastadenovirus_h5_gene:0.0000278696,((AY601635.1_Human_adenovirus_type_5_strain_NHRC_Ad5FS_7151:0.0000278696,((OQ518274.1_Human_adenovirus_5_isolate_HAdV-C5/USA/26107/2012:0.0040284852,((((((((OQ518263.1_Human_adenovirus_5_isolate_HAdV-C5/USA/10166/2012:0.0000000000,OQ518307.1_Human_adenovirus_5_isolate_HAdV-C5/USA/57124/2012:0.0000000000):0.0000000000,OQ518353.1_Human_adenovirus_5_isolate_HAdV-C5/USA/98124/2012:0.0000000000):0.0000026794,OQ518296.1_Human_adenovirus_5_isolate_HAdV-C5/USA/50045/2012:0.0000026794)100:0.0010577566,(OQ518268.1_Human_adenovirus_5_isolate_HAdV-C5/USA/18603/2011:0.0004287016,OQ518275.1_Human_adenovirus_5_isolate_HAdV-C5/USA/27885/2010:0.0026591051)98:0.0002287838)100:0.0007295449,KX868466.2_Human_adenovirus_5_isolate_GyK193:0.0007863180)100:0.0006368170,((OQ518289.1_Human_adenovirus_5_isolate_HAdV-C5/USA/41891/2012:0.0008289130,OQ518319.1_Human_adenovirus_5_isolate_HAdV-C5/USA/66723/2009:0.0002559256)99:0.0001688500,OQ518303.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56086/2011:0.0005417411)99:0.0003010191)68:0.0002417068,(OQ518305.1_Human_adenovirus_5_isolate_HAdV-C5/USA/56304/2010:0.0000026794,OQ518340.1_Human_adenovirus_5_isolate_HAdV-C5/USA/80077/2009:0.0000026794)100:0.0015282976)100:0.0035307970,OQ518283.1_Human_adenovirus_5_isolate_HAdV-C5/USA/34713/2009:0.0035495314)58:0.0019956634)57:0.0010471514,OQ518277.1_Human_adenovirus_5_isolate_HAdV-C5/USA/28636/2011:0.0044458589)100:0.0026055322)56:0.0000026794,mystery_virus:0.0000278696)100:0.0006850767);
+
+TIME STAMP
+----------
+
+Date and time: Wed Oct 18 14:44:53 2023
+Total CPU time used: 83.904001 seconds (0h:1m:23s)
+Total wall-clock time used: 7.525311947 seconds (0h:0m:7s)
+

@@ -39,7 +39,7 @@
 #SBATCH --ntasks=5
 #SBATCH --nodes=1
 #SBATCH --mem=1G
-#SBATCH --account=OD-220926
+#SBATCH --account= #ADD YOUR OWN OD NUMBER HERE !!!!!
 
 ###########################
 # 2) Loading in software

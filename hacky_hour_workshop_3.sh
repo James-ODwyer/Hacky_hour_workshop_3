@@ -36,7 +36,7 @@
 
 #SBATCH --job-name=hacky3
 #SBATCH --time=05:00:00
-#SBATCH --ntasks=5
+#SBATCH --ntasks=4
 #SBATCH --nodes=1
 #SBATCH --mem=1G
 #SBATCH --account= #ADD YOUR OWN OD NUMBER HERE !!!!!
@@ -70,7 +70,7 @@ module load iqtree/2.2.0.5
 # going to tell the programs we are using, the name of input files, and the sequence we think would be a 
 # good outgroup.
 
-threads=12 # You can use the $SLURM_THREADS_PER_CORE if you want instead 
+threads=4 # You can use the $SLURM_THREADS_PER_CORE if you want instead 
 name='human_adeno_5'
 refs='sequences/human_adeno_5_genomes.fa'
 target='sequences/mystery_virus.fa'
@@ -83,7 +83,9 @@ outgroup='M73260.1_Mastadenovirus_h5_gene'
 # So we want to build a phylogenetic tree, but why? We are building a tree to identify what our mystery 
 # sequence is (mystery_virus.fa). We know that it is a DNA virus genome and that it is likely in the 
 # mastadenovirus family, probably a human adenovirus. So we have collected some prospective relatives of
-# our mystery virus: some Human adenoviruss in human_adeno_all_genomes.fa.
+# our mystery virus: some Human adenoviruss in human_adeno_all_genomes.fa. How did we know that we our 
+# virus should go in an adenovirus tree? If you were to get your own mystery sequence, best to give it 
+# a BLAST first to get an initial idea of which genus/family the sequence belongs to.
 #
 # In the following we will take our target virus sequence and the reference sequences and align them
 # all together in a MSA. We will trim this alignment so that only informative alignment sites remain,
@@ -91,6 +93,7 @@ outgroup='M73260.1_Mastadenovirus_h5_gene'
 # seeing our data (our sequences and how they align) given a model (a tree structure). After that we
 # can view the tree with ITol and see if we can come to a conclusion of what our mystery virus is, based
 # on how it is related to the other tree members.
+#
 # Also, we will be designating an outgroup sequence. As trees don't inherently have directionality - you
 # can find how much evolution occured between three members, but you can't say which have a most recent 
 # common ancestor with out more clues - we can specify a member that we believe to be the most distant 
@@ -104,7 +107,7 @@ outgroup='M73260.1_Mastadenovirus_h5_gene'
 # pipe. Try runnning the following command without the '>' and subsequent code to get a feel for it if
 # you are confused. Use 'ls' and 'less' to see what we have created.
 
-cat $refs $target > sequences/$name.fa
+cat $refs $target > sequences/"$name".fa
 
 #################################
 # 4) Multiple sequence alignment
@@ -116,14 +119,14 @@ cat $refs $target > sequences/$name.fa
 # --reorder: Reorders input sequences so that they ordered by similarity.
 # --thread $threads: Specifies the number of threads for parallel processing.
 
-mafft --nuc --auto --reorder --thread $threads sequences/$name.fa > alignment/$name.aln
+mafft --nuc --auto --reorder --thread $threads sequences/"$name".fa > alignment/"$name".aln
 
 ###########################
 # 5) Trimming the MSA
 ###########################
 # Trim the alignment using trimAl:
-# -in $name.aln: Input alignment file.
-# -out $name.trimaln: Output trimmed alignment file.
+# -in "$name".aln: Input alignment file.
+# -out "$name".trimaln: Output trimmed alignment file.
 # -gt 0.8: Remove columns with more than 80% gaps.
 # -st 0.001: Remove sequences with less than 0.1% similarity to others.
 #
@@ -133,17 +136,17 @@ mafft --nuc --auto --reorder --thread $threads sequences/$name.fa > alignment/$n
 # completely different, that is most informative. It is, however, VITAL that you look at your alignments
 # when making phylogenetic trees - make sure they look good! 
 # 
-# I recommend taking the $name.aln and $name.trimaln files off to an alignment viewer (likely Geneious)
+# I recommend taking the "$name".aln and "$name".trimaln files off to an alignment viewer (likely Geneious)
 # and having a look at the MSA. Grab someone from the workshop to discuss it with you!
 
-trimal -in alignment/$name.aln -out alignment/$name.trimaln -gt 0.8 -st 0.001
+trimal -in alignment/"$name".aln -out alignment/"$name".trimaln -gt 0.8 -st 0.001
 
 #################################
 # 6) Phylogenetic tree building
 #################################
 # Build a phylogenetic tree using IQTree 2:
-# -s $name.trimaln: Input alignment file.
-# --prefix $name.tree: Prefix for output tree file.
+# -s "$name".trimaln: Input alignment file.
+# --prefix "$name".tree: Prefix for output tree file.
 # -m TEST: Evolution model selection (IQ-TREE will choose the best model).
 # --alrt 1000: Run SH-aLRT test - it similar to bootstraps but more efficient, basically a likelihood of
 # internal nodes being where they are. From the paper: "This approach extends the recently proposed 
@@ -167,7 +170,7 @@ trimal -in alignment/$name.aln -out alignment/$name.trimaln -gt 0.8 -st 0.001
 # Note that the TEST argument makes things a lot slower, so if you know ahead of time what evolutionary
 # model that this tree will use, best to specify it.
 
-iqtree2 -s alignment/$name.trimaln  --prefix tree/$name -m TEST --alrt 1000 -B 1000 -T $threads -o $outgroup
+iqtree2 -s alignment/"$name".trimaln  --prefix tree/"$name" -m TEST --alrt 1000 -B 1000 -T $threads -o $outgroup
 
 #################################
 # Making figures from tree files

@@ -136,8 +136,11 @@ mafft --nuc --auto --reorder --thread $threads sequences/"$name".fa > alignment/
 # completely different, that is most informative. It is, however, VITAL that you look at your alignments
 # when making phylogenetic trees - make sure they look good! 
 # 
-# I recommend taking the "$name".aln and "$name".trimaln files off to an alignment viewer (likely Geneious)
-# and having a look at the MSA. Grab someone from the workshop to discuss it with you!
+# I recommend taking the "$name".aln and "$name".trimaln files off to an alignment viewer: the normal 
+# method is to download your alignment and view in Geneious. If you cannot do that,you can quickly view
+# your alignment using 'alan', using the following line:
+#     > ./alan alignment/"$name".aln
+# Have a look at the MSA, what has trimal done? Grab someone from the workshop to discuss it with you!
 
 trimal -in alignment/"$name".aln -out alignment/"$name".trimaln -gt 0.8 -st 0.001
 

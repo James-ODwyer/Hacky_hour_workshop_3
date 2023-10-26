@@ -28,6 +28,10 @@
 #    > cd Hacky_hour_workshop_3
 # Then you can run this script with:
 #    > sbatch hacky_hour_workshop_3.sh
+# However, we will run our commands one by one and look at the input and outputs. We will be running an
+# interactive job to do this using:
+#    > srun --account OD-220926 --job-name "test" --cpus-per-task 1 --mem-per-cpu 100 \
+#          --time 00:10:00 --pty bash
 #
 # The following commented lines the arguments that SBatch takes when creating a job instance. I believe 
 # that these have been covered in the previous workshop, so I won't go into detail on their meaning here.

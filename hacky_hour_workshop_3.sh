@@ -30,7 +30,7 @@
 #    > sbatch hacky_hour_workshop_3.sh
 # However, we will run our commands one by one and look at the input and outputs. We will be running an
 # interactive job to do this using:
-#    > srun --account OD-220926 --job-name "test" --cpus-per-task 1 --mem-per-cpu 100 \
+#    > srun --account <your_OD_number> --job-name "test" --cpus-per-task 1 --mem-per-cpu 100 \
 #          --time 00:10:00 --pty bash
 #
 # The following commented lines the arguments that SBatch takes when creating a job instance. I believe 
